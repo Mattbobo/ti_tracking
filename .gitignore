@@ -1,0 +1,14 @@
+# 忽略 Python 虚拟环境文件夹（请将 venv 替换为您实际的虚拟环境文件夹名称，例如 .venv 或 env）
+.venv/
+model_lise/
+Record/
+test_graph/
+Process_data/
+
+# 忽略编译后的字节码文件
+__pycache__/
+*.pyc
+*.pyo
+
+# 忽略本地环境变量文件
+.env

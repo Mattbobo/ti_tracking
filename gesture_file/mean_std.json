@@ -1,0 +1,20 @@
+{
+  "mean": [
+    61.95066452026367,
+    55.371826171875
+  ],
+  "std": [
+    12.979403495788574,
+    11.881619453430176
+  ],
+  "class_map": {
+    "0": 0,
+    "1": 1
+  },
+  "layout": "NCTHW",
+  "win": 20,
+  "stride": 2,
+  "bg_stride": 5,
+  "normalize": true,
+  "force_gesture_full": false
+}
