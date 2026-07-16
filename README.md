@@ -1,13 +1,13 @@
 [README.md](https://github.com/user-attachments/files/30072413/README.md)
 # TI mmWave Radar Hand Tracking
 
-本專案使用 **TI mmWave Radar**、**DCA1000**、相機與 AprilTag，完成雷達資料擷取、角度與距離標註、模型訓練、即時手部追蹤及離線評估。
+本專案使用 **TI mmWave Radar**、**DCA1000EVM**、相機與 AprilTag，完成雷達資料擷取、角度與距離標註、模型訓練、即時手部追蹤及離線評估。
 
 系統會將雷達資料轉換為 RDI、角度特徵等模型輸入，並透過 CNN + GRU 模型預測手部的角度與距離，進一步換算為 XY 座標，用於即時追蹤或虛擬滑鼠操作。
 
 ## 主要功能
 
-- TI mmWave Radar 與 DCA1000 原始資料擷取
+- TI mmWave Radar 與 DCA1000EVM 原始資料擷取
 - 相機與 AprilTag 角度、距離標註
 - 角度與距離模型資料前處理
 - CNN + GRU 模型訓練
@@ -34,7 +34,7 @@ Radar / DCA1000 設定
 
 ## 快速開始
 
-### 1. 設定 Radar 與 DCA1000
+### 1. 設定 Radar 與 DCA1000EVM
 
 主要設定檔：
 
@@ -45,13 +45,13 @@ dca1000_config.json
 
 請先確認：
 
-- Radar 與 DCA1000 網路設定正確
+- Radar 與 DCA1000EVM 網路設定正確
 - Serial Port 與 Camera Index 正確
 - 模型與資料路徑符合目前電腦環境
 
 ### 2. 錄製資料
 
-DCA1000 錄製工具：
+DCA1000EVM 錄製工具：
 
 ```bash
 python dca1000_rdi_raw_range_azimuth_camera.py
@@ -207,7 +207,7 @@ PROJECT_FILES_OVERVIEW.md
 - NumPy
 - h5py
 - TI mmWave Radar
-- DCA1000
+- DCA1000EVM
 - AprilTag
 
 ## License
